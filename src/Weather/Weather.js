@@ -4,6 +4,9 @@ import axios from 'axios'
 
 import './weather.css'
 
+
+import { key }  from '../keys.js'
+
 class Weather extends React.Component{
 
     constructor(props) {
@@ -33,9 +36,7 @@ class Weather extends React.Component{
 
       var day = weekday[d.getDay()];
 
-
-
-      const url = "http://api.openweathermap.org/data/2.5/weather?q=London&appid=b45d84a44810d326858ee63a6fe20047"
+      const url = `http://api.openweathermap.org/data/2.5/weather?q=London&appid=${key}`
       const weather = await axios.get(url)
 
       let image = weather.data.weather[0].icon

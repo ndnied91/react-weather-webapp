@@ -1,6 +1,7 @@
 import React from 'react'
 import axios from 'axios'
 
+import { key }  from '../keys.js'
 
 import './fiveDayWeather.css'
 class FiveDayForeCast extends React.Component{
@@ -37,7 +38,7 @@ convertToF(temp){
 
 async componentDidMount(){
 
-      const url ="https://api.openweathermap.org/data/2.5/forecast?q=London&appid=b45d84a44810d326858ee63a6fe20047"
+      const url =`https://api.openweathermap.org/data/2.5/forecast?q=London&appid=${key}`
       const res =await axios.get(url)
 
 
@@ -85,7 +86,7 @@ async componentDidMount(){
               let tempHigh = this.convertToF( (highs.get(date) / item))
               let tempLow = this.convertToF(( lows.get(date)  / item))
               let icon = icons.get(date)
-       
+
               if(nwd.length <5){
                 nwd.push({ date, tempLow, tempHigh , icon  })
               }
