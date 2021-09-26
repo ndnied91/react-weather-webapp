@@ -1,0 +1,27 @@
+
+
+.tempRanges{
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.tempRanges p{
+  padding: 10px;
+}
+
+
+#high{
+  font-weight: 600;
+}
+#low{
+  color: grey;
+  font-weight: 600;
+}
+
+
+#day{
+  color: grey;
+  font-weight: 500;
+}

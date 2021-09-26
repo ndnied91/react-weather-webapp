@@ -1,0 +1,47 @@
+
+
+.forecast{
+  display: flex;
+
+  border: 1px solid #E0E0E0;
+  width: min-content;
+  margin: auto;
+}
+
+
+
+
+.tempRanges{
+    display: flex;
+    justify-content: center;
+}
+
+
+#high{
+  font-weight: 600;
+  margin: 0;
+}
+#low{
+  color: grey;
+  font-weight: 600;
+  margin: 0;
+}
+
+
+
+.day{
+  padding: 5px 13px 8px 13px;
+}
+
+
+.title{
+  margin-bottom: 3px;
+  font-weight: 500;
+  color: #909090;
+}
+
+
+
+.forecast > div:nth-child(1){
+  background-color: #E0E0E0;
+}
