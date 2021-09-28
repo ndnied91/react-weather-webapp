@@ -1,23 +1,14 @@
-
 import './App.css';
-
-import Weather from '../Weather/Weather'
-
-import FiveDayForeCast from '../5DayForecast/FiveDayForecast'
+import Weather from '../Weather'
+import FiveDayForecast from '../FiveDayForecast'
 
 function App() {
   return (
     <div className="App">
-
-
       <h1> Weather Project </h1>
-
-
       <Weather/>
-
-
-      <div className="forecast1">
-        <FiveDayForeCast/>
+      <div className="fiveDayForecast">
+        <FiveDayForecast/>
       </div>
     </div>
   );
